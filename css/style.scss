@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'lunaregular';
+    src: url('./font/webfontkit-20210810-150130/luna-webfont.woff2'),
+         url('./font/webfontkit-20210810-150130/luna-webfont.woff'),
+         url('./font/Luna.ttf');
+    
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    margin: 0;
+}
+html{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+h1{
+    color: rgb(233, 181, 114);
+    background-color: whitesmoke;
+    /* text-shadow: black 0.1em 0.1em 0.2em; */
+    font-family: 'lunaregular';
+}
+h2{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h3{
+    color: rgb(233, 181, 114);
+}
+
+a{
+    color: salmon;
+    padding: 20px;
+    text-decoration: none;
+}
+a:hover{
+    color:whitesmoke;
+}
+
+#header{
+    background: url(./img/beach.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 4%;
+
+    & nav{
+        text-align: center;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+            #head-page{
+                background-color: rgba(255, 255, 255, 0.5);
+                margin-top: 10%;
+                margin-bottom: 10%;
+                padding-bottom: 3%;
+                
+                padding-right: 2%;
+
+                      & #head-page__infos{
+                            text-align: center;
+                            width: 50%;
+                            margin: auto;
+                            margin-right: 24%;
+                            padding-bottom: 2%;
+                        }
+
+                            & p a{
+                                background-color: salmon;
+                                color: white;
+                                border: 1px solid burlywood;
+                                border-radius: 20px;
+                                padding: 14px;
+                                transition: ease 1s;
+                            }
+
+            }
+
+
+    #head-page__infos p a:hover{
+        color: salmon;
+        background-color: white;
+    
+    }
+}
+
+
+
+/* A PROPOS */
+#apropos{
+    display:flex;
+
+    #apropos p{
+        text-align: justify;
+        flex: 2;
+        padding: 20px;
+        
+    }
+                #apropos__img{
+                    flex: 1;
+                    padding: 20px;
+                    max-width: 100%;
+                    padding-top: 20px;
+                    padding: 20px;
+                
+                }
+
+}
+
+
+
+/* SERVICES */
+#services{
+    display:flex;
+    background-color: burlywood;
+    padding: 20px 40px 20px 40px;
+    text-align: center;
+
+    .services__items{
+        margin: 25px 0px 20px 60px;
+    }
+    
+    .services__items p{
+        text-align: justify;
+    }
+}
+
+
+footer{
+    background-color: rgba(0, 0, 0);
+    display:flex;
+    
+    #form{
+        background-color: salmon;
+        padding: 28px 42px 33px 57px;
+        margin: 20px 20px 20px 20px;
+        border: 1px solid burlywood;
+        border-radius: 20px;
+        
+       
+    }
+    #reseaux{
+        display: flex;
+        padding: 28px 42px 33px 57px ;
+    
+    }
+    
+
+    #dispo p{
+        color: whitesmoke;
+        text-align: center;
+    }
+
+    .dispo__infos{
+        padding: 20px 20px 20px 20px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    body{
+        width: 100%;
+    }
+    #haut{
+        background-position: 46%;    }
+    #apropos {
+        
+        overflow:hidden;
+        flex-direction: column;
+        text-align: center;
+    }
+    #apropos__img img{
+        width: 100%;
+      
+    }
+    #services{
+        
+        overflow:hidden;
+        flex-direction: column;
+        text-align: center;
+    }
+    .services__items{
+        padding-right: 54px;
+    }
+    footer{
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
